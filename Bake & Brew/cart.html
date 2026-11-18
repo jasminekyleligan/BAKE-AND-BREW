@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Cart | Bake &amp; Brew</title>
+<meta name="description" content="Review your Bake & Brew order and check out for pickup.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="container">
+  <a class="logo" href="index.html">Bake <span>&amp;</span> Brew</a>
+  <nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="product.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="cart.html" aria-current="page">Cart <span class="cart-count" aria-label="items in cart">0</span></a></li></ul></nav>
+</div></header>
+<main id="main">
+
+<div class="page-title"><h2>Your Cart</h2><p>Pickup orders only</p></div>
+<section class="block"><div class="container cart-wrap">
+  <div class="panel" id="cart-items" aria-live="polite"></div>
+  <div class="panel">
+    <h3>Checkout</h3>
+    <div class="total-line"><span>Total</span><span id="total">₱0.00</span></div>
+    <form id="order-form">
+      <label for="name">Name</label>
+      <input id="name" name="name" required autocomplete="name">
+      <label for="phone">Mobile number</label>
+      <input id="phone" name="phone" type="tel" required autocomplete="tel">
+      <p style="margin-top:1.2rem"><button type="submit">Place Pickup Order</button></p>
+    </form>
+    <p id="order-msg" class="notice" role="status" hidden></p>
+    <p><small>Questions? <a href="mailto:bakeandbrew@gmail.com">bakeandbrew@gmail.com</a></small></p>
+  </div>
+</div></section>
+</main>
+<footer class="site">
+  <p class="foot-nav"><a href="index.html">Home</a> · <a href="product.html">Menu</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="cart.html">Cart</a></p>
+  <p>&copy; 2026 Bake &amp; Brew. All rights reserved.</p>
+  <p><a href="mailto:bakeandbrew@gmail.com">bakeandbrew@gmail.com</a></p>
+</footer>
+</body>
+</html>
